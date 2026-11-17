@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  list-style: none;
+  text-decoration: none;
+
+  outline: 0;
+
+  font-family: "Jost", sans-serif;
+}
+
+:root {
+  --primary-color: #b5002c;
+  --white: #ffffff;
+}
+
+body {
+  height: calc(100vh - 80px);
+}
+
+header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+header a {
+  color: var(--white);
+}
+
+header nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+header nav ul li a {
+  color: var(--white);
+}
+
+header nav ul li a:hover {
+  border-bottom: 1px solid var(--white);
+}
+
+.banner img {
+  height: 300px;
+  width: 100%;
+}
+
+.what-to-visit,
+.reason,
+.about {
+  padding: 50px;
+  display: flex;
+  gap: 50px;
+}
+
+.what-to-visit .text-block,
+.reason .text-block,
+.about .text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.what-to-visit .text-block h2,
+.reason .text-block h2,
+.about .text-block h2 {
+  font-size: 32px;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.what-to-visit .text-block p,
+.reason .text-block p,
+.about .text-block p {
+  text-align: justify;
+}
+
+.what-to-visit img,
+.about img {
+  height: 300px;
+  width: 600px;
+  border: 10px solid var(--primary-color);
+  border-radius: 20px;
+}
+
+.reason img {
+  height: 300px;
+  width: 1200px;
+  border: 10px solid var(--primary-color);
+  border-radius: 20px;
+}
+
+footer {
+  padding: 0 0 0 50px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  background-color: var(--primary-color);
+}
