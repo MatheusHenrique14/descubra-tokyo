@@ -1,0 +1,130 @@
+
+.banner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.introduction-gastronomy {
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.introduction-gastronomy h1 {
+  font-size: 36px;
+  color: var(--primary-color);
+}
+
+.introduction-gastronomy p {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+.gastronomy-items {
+  padding: 30px 50px 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.gastronomy-items h2 {
+  grid-column: 1 / -1;
+  font-size: 32px;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+.card-gastronomy {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border: 3px solid var(--primary-color);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-gastronomy:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-gastronomy .card-image {
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+}
+
+.card-gastronomy .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.card-gastronomy:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-gastronomy .card-description {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-gastronomy .card-description h3 {
+  font-size: 23px;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+
+.card-gastronomy .card-description p {
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  .gastronomy-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gastronomy-items {
+    grid-template-columns: 1fr;
+    padding: 25px;
+  }
+
+  .introduction-gastronomy {
+    padding: 30px 25px;
+  }
+
+  .introduction-gastronomy h1 {
+    font-size: 28px;
+  }
+
+  .gastronomy-items h2 {
+    font-size: 26px;
+  }
+
+  header {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
